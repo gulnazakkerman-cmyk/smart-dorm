@@ -1,0 +1,140 @@
+<mxGraphModel dx="1254" dy="679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;\n@startuml\nleft to right direction\nskinparam shadowing false\nskinparam backgroundColor white\nskinparam nodesep 50\nskinparam ranksep 60\n\ntitle Smart Dorm - Ақпаратты іздеу (US-02)\n\nactor \&quot;Студент\&quot; as S\nactor \&quot;Қабат старостасы\&quot; as K\nactor \&quot;Комендант\&quot; as A\nactor \&quot;Тех. қызметкер\&quot; as T\n\nrectangle \&quot;Smart Dorm\&quot; {\n  usecase \&quot;Ақпаратты іздеу\\n(US-02)\&quot; as UC\n  usecase \&quot;Іздеу сұрауын енгізу\&quot; as U1\n  usecase \&quot;Фильтрлерді қолдану\&quot; as U2\n  usecase \&quot;Нәтижелерді қарау\&quot; as U3\n  usecase \&quot;Толық ақпаратты көру\&quot; as U4\n  usecase \&quot;Іздеу нәтижесін жүктеу\&quot; as U5\n}\n\nS -- UC\nK -- UC\nA -- UC\nT -- UC\n\nUC ..&gt; U1 : &lt;&lt;include&gt;&gt;\nUC ..&gt; U2 : &lt;&lt;include&gt;&gt;\nUC ..&gt; U3 : &lt;&lt;include&gt;&gt;\nUC ..&gt; U4 : &lt;&lt;include&gt;&gt;\nU5 ..&gt; UC : &lt;&lt;extend&gt;&gt;\n\n@enduml\n&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="rVjfxj2UMOJRTWIZFahC-1">
+      <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+        <mxGeometry as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Smart Dorm" plantUmlId="rect_0" plantUmlBaseStyle="swimlane;collapsible=0;startSize=26;fillColor=none;strokeColor=#181818;fontColor=#000000;fontSize=13;fontStyle=1;whiteSpace=wrap;shadow=0;" plantUmlBaseValue="Smart Dorm" id="rVjfxj2UMOJRTWIZFahC-2">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="swimlane;collapsible=0;startSize=26;fillColor=none;strokeColor=#181818;fontColor=#000000;fontSize=13;fontStyle=1;whiteSpace=wrap;shadow=0;" vertex="1">
+        <mxGeometry height="393" width="640" x="194" y="64" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Іздеу нәтижесін жүктеу&lt;div&gt;(қажет болса)&lt;/div&gt;" plantUmlId="uc_1" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="Іздеу нәтижесін жүктеу" id="rVjfxj2UMOJRTWIZFahC-3">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-2" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="43" width="189" x="437.5" y="346" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Ақпаратты іздеу&lt;br&gt;(US-02)" plantUmlId="uc_2" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="Ақпаратты іздеу&lt;br&gt;(US-02)" id="rVjfxj2UMOJRTWIZFahC-4">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-2" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="52" width="165" x="166" y="165" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Іздеу сұрауын енгізу&lt;div&gt;(кілт сөз, фильтр)&lt;/div&gt;" plantUmlId="uc_3" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="Іздеу сұрауын енгізу" id="rVjfxj2UMOJRTWIZFahC-5">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-2" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="40" width="176" x="444" y="46" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Фильтрлерді қолдану&lt;div&gt;(санат, дата, қабат, бөлме т.б.)&lt;/div&gt;" plantUmlId="uc_4" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="Фильтрлерді қолдану" id="rVjfxj2UMOJRTWIZFahC-6">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-2" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="60" width="189" x="446.5" y="109" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Нәтижелерді қарау&lt;div&gt;(тізім, карта, кесте)&lt;/div&gt;" plantUmlId="uc_5" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="Нәтижелерді қарау" id="rVjfxj2UMOJRTWIZFahC-7">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-2" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="36" width="158" x="453" y="205" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Толық ақпаратты көру&lt;div&gt;(карточка)&lt;/div&gt;" plantUmlId="uc_6" plantUmlBaseStyle="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="Толық ақпаратты көру" id="rVjfxj2UMOJRTWIZFahC-8">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-2" style="ellipse;html=1;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="40" width="176" x="444" y="281" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="«include»" plantUmlId="rel_19" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«include»" id="rVjfxj2UMOJRTWIZFahC-21">
+      <mxCell edge="1" parent="rVjfxj2UMOJRTWIZFahC-2" source="rVjfxj2UMOJRTWIZFahC-4" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="rVjfxj2UMOJRTWIZFahC-5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="«include»" plantUmlId="rel_20" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«include»" id="rVjfxj2UMOJRTWIZFahC-22">
+      <mxCell edge="1" parent="rVjfxj2UMOJRTWIZFahC-2" source="rVjfxj2UMOJRTWIZFahC-4" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="rVjfxj2UMOJRTWIZFahC-6">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="«include»" plantUmlId="rel_21" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«include»" id="rVjfxj2UMOJRTWIZFahC-23">
+      <mxCell edge="1" parent="rVjfxj2UMOJRTWIZFahC-2" source="rVjfxj2UMOJRTWIZFahC-4" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="rVjfxj2UMOJRTWIZFahC-7">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="«include»" plantUmlId="rel_22" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«include»" id="rVjfxj2UMOJRTWIZFahC-24">
+      <mxCell edge="1" parent="rVjfxj2UMOJRTWIZFahC-2" source="rVjfxj2UMOJRTWIZFahC-4" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="rVjfxj2UMOJRTWIZFahC-8">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="«extend»" plantUmlId="rel_22" plantUmlBaseStyle="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="«include»" id="rVjfxj2UMOJRTWIZFahC-28">
+      <mxCell edge="1" parent="rVjfxj2UMOJRTWIZFahC-2" style="endArrow=open;dashed=1;dashPattern=5 5;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0.102;entryY=0.173;entryDx=0;entryDy=0;entryPerimeter=0;" target="rVjfxj2UMOJRTWIZFahC-3">
+        <mxGeometry relative="1" x="-0.249" y="-20" as="geometry">
+          <mxPoint as="offset" />
+          <mxPoint x="266" y="219" as="sourcePoint" />
+          <mxPoint x="453" y="292" as="targetPoint" />
+        </mxGeometry>
+      </mxCell>
+    </UserObject>
+    <UserObject label="" plantUmlId="actor_7" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="" id="rVjfxj2UMOJRTWIZFahC-9">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="60" width="40" x="63.5" y="70" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Студент" plantUmlId="actorlbl_8" plantUmlBaseStyle="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" plantUmlBaseValue="Студент" id="rVjfxj2UMOJRTWIZFahC-10">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" vertex="1">
+        <mxGeometry height="17" width="61" x="53" y="130" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="" plantUmlId="actor_9" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="" id="rVjfxj2UMOJRTWIZFahC-11">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="60" width="40" x="63.5" y="180" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Қабат старостасы" plantUmlId="actorlbl_10" plantUmlBaseStyle="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" plantUmlBaseValue="Қабат старостасы" id="rVjfxj2UMOJRTWIZFahC-12">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" vertex="1">
+        <mxGeometry height="17" width="128" x="21" y="240" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="" plantUmlId="actor_11" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="" id="rVjfxj2UMOJRTWIZFahC-13">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="60" width="40" x="63.5" y="280" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Комендант" plantUmlId="actorlbl_12" plantUmlBaseStyle="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" plantUmlBaseValue="Комендант" id="rVjfxj2UMOJRTWIZFahC-14">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" vertex="1">
+        <mxGeometry height="17" width="77" x="45" y="340" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="" plantUmlId="actor_13" plantUmlBaseStyle="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;shadow=0;" plantUmlBaseValue="" id="rVjfxj2UMOJRTWIZFahC-15">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="shape=umlActor;html=1;fillColor=#F1F1F1;strokeColor=#181818;fontColor=#000000;fontSize=14;shadow=0;" vertex="1">
+        <mxGeometry height="60" width="40" x="63.5" y="380" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Тех. қызметкер" plantUmlId="actorlbl_14" plantUmlBaseStyle="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" plantUmlBaseValue="Тех. қызметкер" id="rVjfxj2UMOJRTWIZFahC-16">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="text;html=1;align=center;verticalAlign=top;fontColor=#000000;fontSize=14;" vertex="1">
+        <mxGeometry height="17" width="110" x="39" y="440" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="" plantUmlId="rel_15" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="rVjfxj2UMOJRTWIZFahC-17">
+      <mxCell edge="1" parent="rVjfxj2UMOJRTWIZFahC-1" source="rVjfxj2UMOJRTWIZFahC-9" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="rVjfxj2UMOJRTWIZFahC-4">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="" plantUmlId="rel_16" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="rVjfxj2UMOJRTWIZFahC-18">
+      <mxCell edge="1" parent="rVjfxj2UMOJRTWIZFahC-1" source="rVjfxj2UMOJRTWIZFahC-11" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="rVjfxj2UMOJRTWIZFahC-4">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="" plantUmlId="rel_17" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="rVjfxj2UMOJRTWIZFahC-19">
+      <mxCell edge="1" parent="rVjfxj2UMOJRTWIZFahC-1" source="rVjfxj2UMOJRTWIZFahC-13" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="rVjfxj2UMOJRTWIZFahC-4">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="" plantUmlId="rel_18" plantUmlBaseStyle="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="rVjfxj2UMOJRTWIZFahC-20">
+      <mxCell edge="1" parent="rVjfxj2UMOJRTWIZFahC-1" source="rVjfxj2UMOJRTWIZFahC-15" style="endArrow=none;strokeColor=#181818;fontColor=#000000;fontSize=11;edgeStyle=none;rounded=0;html=1;curved=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="rVjfxj2UMOJRTWIZFahC-4">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </UserObject>
+    <UserObject label="Smart Dorm - Ақпаратты іздеу (US-02)" plantUmlId="title_0" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;whiteSpace=wrap;" plantUmlBaseValue="Smart Dorm - Ақпаратты іздеу (US-02)" id="rVjfxj2UMOJRTWIZFahC-26">
+      <mxCell parent="rVjfxj2UMOJRTWIZFahC-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1">
+        <mxGeometry height="24" width="298" x="283" y="30" as="geometry" />
+      </mxCell>
+    </UserObject>
+  </root>
+</mxGraphModel>
